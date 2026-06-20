@@ -131,9 +131,10 @@ sudo systemctl status wazuh-agent
 
 The agent successfully connected to the Wazuh Server.
 ## Screenshot agent running
-(./screenshots/agent-running.png)
 
-## Screenshot agent deployed
+![Agent running](./screenshots/agent-running.png)
+
+## Screenshot agent deploy
 
 ![Agent Connected](./screenshots/agent-connected.png)
 
@@ -211,6 +212,7 @@ A brute-force attack was simulated using Hydra from Kali Linux.
 ```bash
 
 hydra -l analyst -P password.txt ssh://192.168.190.132
+
 ```
 
 ## Objective
@@ -245,6 +247,13 @@ Maximum authentication attempts exceeded
 ## Investigation Insight
 
 These logs confirmed that the brute-force attack successfully generated security events on the endpoint.
+## Screenshot
+
+![Authentication Alert](./screenshots/authentication-alert.png)
+
+multiple authentication failures followed by success
+
+![Authentication Alert](./screenshots/authentication-alert2.png)
 
 ---
 
@@ -324,7 +333,7 @@ Anywhere DENY 192.168.190.128
 ## Screenshot
 
 ![UFW Block](./screenshots/ufw-block.png)
-
+<!--
 ---
 
 # Project Evidence
@@ -361,7 +370,8 @@ Anywhere DENY 192.168.190.128
 
 ![UFW Block](./screenshots/ufw-block.png)
 
----
+--- 
+-->
 
 # Detection Workflow
 
