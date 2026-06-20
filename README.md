@@ -1,5 +1,6 @@
 # SOC Threat Monitoring & Incident Response Lab
 
+
 ## Overview
 
 This project demonstrates hands-on experience in building and operating a Security Operations Center (SOC) Home Lab using Wazuh SIEM, Suricata IDS, Kali Linux, and Ubuntu Server.
@@ -129,8 +130,10 @@ sudo systemctl status wazuh-agent
 ```
 
 The agent successfully connected to the Wazuh Server.
+## Screenshot agent running
+(./screenshots/agent-running.png)
 
-## Screenshot
+## Screenshot agent deployed
 
 ![Agent Connected](./screenshots/agent-connected.png)
 
@@ -206,6 +209,7 @@ A brute-force attack was simulated using Hydra from Kali Linux.
 ## Attack Command
 
 ```bash
+
 hydra -l analyst -P password.txt ssh://192.168.190.132
 ```
 
